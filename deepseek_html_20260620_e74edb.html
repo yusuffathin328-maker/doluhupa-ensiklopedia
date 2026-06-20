@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>Pesonanya Bumi Gorontalo · Doluhupa & Warisan Tradisi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <style>
+    * { scroll-behavior: smooth; font-family: 'Inter', sans-serif; }
+    body { background: #faf7f0; }
+    .glass-nav { background: rgba(255, 248, 235, 0.85); backdrop-filter: blur(6px); }
+    .card-shadow { box-shadow: 0 20px 30px -10px rgba(0,0,0,0.08); }
+    .tab-active { border-bottom: 3px solid #b8860b; color: #7a5c1a; }
+    .gradient-hero { background: linear-gradient(145deg, #f3ede3 0%, #e6dccc 100%); }
+    .btn-gold { background: #b8860b; transition: 0.2s; }
+    .btn-gold:hover { background: #9e7109; transform: scale(1.02); }
+    .card-3d-container { min-height: 460px; background: #e7dfd2; border-radius: 32px; }
+    .model-wrapper iframe { width: 100%; height: 100%; min-height: 460px; border-radius: 24px; }
+    .footer-bg { background: #2d2a24; }
+    .hotspot-btn { background: rgba(184, 134, 11, 0.9); backdrop-filter: blur(2px); border: 1px solid #f6e7c5; }
+    .hotspot-btn:hover { background: #b8860b; transform: scale(1.05); }
+    @media (max-width: 640px) { .model-wrapper iframe { min-height: 320px; } }
+    .content-img { max-height: 250px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+    .content-img-map { max-height: 280px; object-fit: contain; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+    .tab-content p { line-height: 1.8; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGASI -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-amber-200/40 px-6 py-3 flex flex-wrap items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="text-2xl font-bold text-amber-800 tracking-tight">🏛️ Doluhupa</span>
+      <span class="hidden sm:inline text-xs text-stone-500 italic">· Gorontalo</span>
+    </div>
+    <nav class="flex flex-wrap gap-4 text-sm md:text-base font-medium text-stone-700">
+      <a href="#doluhupa" class="hover:text-amber-700 transition">Doluhupa</a>
+      <a href="#budaya" class="hover:text-amber-700 transition">Budaya & Adat</a>
+      <a href="#alam" class="hover:text-amber-700 transition">Kekayaan Alam</a>
+      <a href="#galeri3d" class="hover:text-amber-700 transition">Galeri Interaktif</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="gradient-hero pt-28 pb-16 px-6 text-center relative overflow-hidden">
+    <div class="max-w-5xl mx-auto">
+      <h1 class="text-4xl md:text-6xl font-bold text-amber-900 leading-tight drop-shadow-sm">Pesonanya Bumi Gorontalo:<br><span class="text-amber-700">Menjelajahi Filosofi Doluhupa & Warisan Tradisi</span></h1>
+      <p class="text-stone-600 text-lg md:text-xl max-w-2xl mx-auto mt-4 italic">"Adat Bersendikan Syara', Syara' Bersendikan Kitabullah"</p>
+      <a href="#doluhupa" class="inline-block mt-8 btn-gold text-white font-semibold px-10 py-4 rounded-full shadow-lg transition">Mulai Menjelajah</a>
+    </div>
+  </section>
+
+  <!-- SECTION 1: RUMAH ADAT DOLUHUPA -->
+  <section id="doluhupa" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl md:text-4xl font-bold text-amber-800 border-l-8 border-amber-600 pl-4 mb-10">🏠 Rumah Adat Doluhupa</h2>
+    <div class="flex flex-wrap gap-2 border-b border-amber-200/60 mb-8" id="tabHeaders">
+      <button class="tab-btn px-6 py-3 font-medium text-stone-600 hover:text-amber-800 transition border-b-2 border-transparent" data-tab="makna">Makna Doluhupa</button>
+      <button class="tab-btn px-6 py-3 font-medium text-stone-600 hover:text-amber-800 transition border-b-2 border-transparent" data-tab="arsitektur">Ciri Arsitektur</button>
+      <button class="tab-btn px-6 py-3 font-medium text-stone-600 hover:text-amber-800 transition border-b-2 border-transparent" data-tab="filosofi">Filosofi Bangunan</button>
+    </div>
+    <div id="tabContent" class="bg-white/70 p-6 rounded-3xl card-shadow border border-amber-100/50">
+      <!-- konten diisi JS -->
+    </div>
+  </section>
+
+  <!-- SECTION 2: ENSIKLOPEDIA KEBUDAYAAN -->
+  <section id="budaya" class="bg-amber-50/60 py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-amber-800 border-l-8 border-amber-600 pl-4 mb-10">🌿 Ensiklopedia Kebudayaan Gorontalo</h2>
+      <div class="flex flex-wrap gap-2 border-b border-amber-200/60 mb-8" id="budayaTabHeaders">
+        <button class="budaya-tab-btn px-5 py-2 font-medium text-stone-600 hover:text-amber-800 transition border-b-2 border-transparent" data-btab="geografi">Lokasi & Geografis</button>
+        <button class="budaya-tab-btn px-5 py-2 font-medium text-stone-600 hover:text-amber-800 transition border-b-2 border-transparent" data-btab="adat">Budaya & Adat</button>
+        <button class="budaya-tab-btn px-5 py-2 font-medium text-stone-600 hover:text-amber-800 transition border-b-2 border-transparent" data-btab="pakaian">Pakaian Khas</button>
+        <button class="budaya-tab-btn px-5 py-2 font-medium text-stone-600 hover:text-amber-800 transition border-b-2 border-transparent" data-btab="makanan">Makanan Khas</button>
+        <button class="budaya-tab-btn px-5 py-2 font-medium text-stone-600 hover:text-amber-800 transition border-b-2 border-transparent" data-btab="flora">Flora & Fauna</button>
+      </div>
+      <div id="budayaContent" class="bg-white/80 p-6 rounded-3xl card-shadow border border-amber-100/50 min-h-[200px]">
+        <!-- diisi JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: GALERI 3D INTERAKTIF -->
+  <section id="galeri3d" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl md:text-4xl font-bold text-amber-800 border-l-8 border-amber-600 pl-4 mb-6">🌀 Model 3D Doluhupa</h2>
+    <p class="text-stone-600 mb-6">Putar, zoom, dan klik tombol untuk eksplorasi filosofi rumah adat.</p>
+    
+    <div class="card-3d-container relative p-2 bg-white/40 backdrop-blur-sm border border-amber-200/40">
+      <div class="model-wrapper w-full">
+        <iframe title="doluhupa" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/afb8fa2a2d0a4499a2bd6581eb5abf3b/embed"> </iframe>
+      </div>
+      <div class="absolute bottom-4 left-4 right-4 flex flex-wrap gap-3 justify-center md:justify-start pointer-events-none">
+        <button class="hotspot-btn pointer-events-auto text-white text-sm font-medium px-5 py-2 rounded-full shadow-lg transition" data-focus="atap">🏷️ Atap & Atas</button>
+        <button class="hotspot-btn pointer-events-auto text-white text-sm font-medium px-5 py-2 rounded-full shadow-lg transition" data-focus="tangga">🏷️ Tangga Adat</button>
+        <button class="hotspot-btn pointer-events-auto text-white text-sm font-medium px-5 py-2 rounded-full shadow-lg transition" data-focus="pilar">🏷️ Pilar Utama</button>
+      </div>
+    </div>
+    <div id="infoPopup" class="mt-4 p-4 bg-amber-100/80 border-l-4 border-amber-700 rounded-xl text-stone-700 hidden transition-all">
+      <span id="popupText">Klik salah satu tombol untuk melihat filosofi.</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-bg text-stone-300 px-6 py-10 mt-12">
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 gap-6">
+      <div>
+        <p class="text-amber-300 font-semibold text-lg">🏛️ Doluhupa · Gorontalo</p>
+        <p class="text-sm max-w-sm">Ensiklopedia digital kebudayaan Provinsi Gorontalo. Sumber: Kemendikbud, Pemprov Gorontalo, jurnal budaya.</p>
+      </div>
+      <div class="text-sm text-right space-y-1">
+        <p>© 2026 · warisan tradisi & filosofi</p>
+        <p class="text-stone-400">Model 3D oleh BackCannon1912 (Sketchfab)</p>
+        <p class="text-stone-500 text-xs">Konten dibuat untuk edukasi budaya.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      // ---------- DATA KONTEN DOLUHUPA (UPDATED) ----------
+      const tabData = {
+        makna: `<div class="flex flex-col md:flex-row gap-6 items-center">
+                  <div class="flex-1">
+                    <img src="https://picture.triptrus.com/image/2014/06/rumah-adat-dulohupa-1.jpeg" alt="Rumah Adat Doluhupa" class="content-img w-full" onerror="this.style.display='none';">
+                  </div>
+                  <div class="flex-1">
+                    <h3 class="text-2xl font-bold text-amber-800">Makna Doluhupa</h3>
+                    <p class="mt-3 text-stone-700 leading-relaxed">Secara harfiah, kata Doluhupa dalam bahasa daerah Gorontalo memiliki arti <strong>"mufakat"</strong> atau <strong>"kesepakatan"</strong>. Sesuai dengan namanya, rumah adat berbentuk panggung ini pada masa kesultanan tidak digunakan sebagai tempat tinggal pribadi raja, melainkan berfungsi sebagai <strong>istana pengadilan</strong> sekaligus <strong>gedung musyawarah resmi</strong>. Di tempat inilah para penguasa adat, raja, dan pembesar negeri berkumpul untuk menyidangkan perkara pidana atau perdata, merumuskan undang-undang, serta menyelesaikan berbagai persoalan penting masyarakat guna mencapai keputusan yang adil melalui musyawarah.</p>
+                  </div>
+                </div>`,
+        
+        arsitektur: `<div class="flex flex-col md:flex-row gap-6 items-center">
+                      <div class="flex-1 order-2 md:order-1">
+                        <h3 class="text-2xl font-bold text-amber-800">Ciri Arsitektur</h3>
+                        <p class="mt-3 text-stone-700 leading-relaxed">Rumah adat Doluhupa memiliki ciri arsitektur yang khas berupa <strong>rumah panggung</strong> yang struktur utamanya ditopang oleh tiang-tiang kayu besar di atas fondasi batu (dikenal sebagai <strong>poti</strong>). Bangunan ini dilengkapi dengan dua tangga utama di sisi kiri dan kanan bagian depan yang melambangkan jalan masuk dan keluar, serta memiliki dinding semi terbuka untuk sirkulasi udara yang optimal. Atapnya berbentuk <strong>pelana dua lapis</strong> yang terbuat dari jerami atau rumbia, sedangkan bagian interiornya berupa ruangan besar terbuka (saluran) tanpa sekat-sekat kamar, mencerminkan transparansi dan keterbukaan dalam setiap proses pengambilan keputusan.</p>
+                      </div>
+                      <div class="flex-1 order-1 md:order-2">
+                        <img src="https://superlive.id/storage/articles/mobile/xmobile_be6a10bf-ff2f-47a6-a873-be8582e79ed1.jpg.pagespeed.ic.Sn-94Qp56O.jpg" alt="Arsitektur Doluhupa" class="content-img w-full" onerror="this.style.display='none';">
+                      </div>
+                    </div>`,
+        
+        filosofi: `<div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="flex-1">
+                      <img src="https://tse2.mm.bing.net/th/id/OIP.YJSywE80gpPG7ol8Hp5DRgHaEx?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Filosofi Doluhupa" class="content-img w-full" onerror="this.style.display='none';">
+                    </div>
+                    <div class="flex-1">
+                      <h3 class="text-2xl font-bold text-amber-800">Filosofi Bangunan</h3>
+                      <p class="mt-3 text-stone-700 leading-relaxed">Setiap elemen arsitektur pada Doluhupa sarat akan nilai filosofis dan prinsip hidup masyarakat Gorontalo yang berlandaskan syariat Islam. Jumlah tiang penyangga bangunan memiliki makna tersendiri, seperti <strong>tiang utama (wolihi)</strong> yang melambangkan pilar kerajaan, serta jajaran tiang lainnya yang menggambarkan persatuan <strong>lima kerajaan dalam konfederasi Pohala'a</strong> (Gorontalo, Limboto, Suwawa, Boalemo, dan Atinggola). Struktur rumah panggung yang tinggi juga melambangkan kedudukan hukum dan keadilan yang harus dijunjung tinggi di atas segalanya, sementara ketiadaan sekat di dalam ruangan menegaskan prinsip kesetaraan dan musyawarah tanpa ada hal yang disembunyikan.</p>
+                    </div>
+                  </div>`
+      };
+
+      // ---------- DATA KEBUDAYAAN (UPDATED) ----------
+      const budayaData = {
+        geografi: `<h4 class="text-xl font-semibold text-amber-800">📍 Lokasi & Geografis</h4>
+                   <div class="flex flex-col md:flex-row gap-6 items-center my-4">
+                     <div class="flex-1">
+                       <img src="https://1.bp.blogspot.com/-vh3oBB-xhaY/YWtmlgIQ4MI/AAAAAAAAgHY/_1GpN5zbje0FmUk21zKcM6Le8CSbUdbJQCLcBGAsYHQ/s638/Peta_Propinsi_Gorontalo.jpg" alt="Peta Provinsi Gorontalo" class="content-img-map w-full" onerror="this.style.display='none';">
+                     </div>
+                     <div class="flex-1">
+                       <p class="text-stone-700">Provinsi Gorontalo terletak di Semenanjung Utara Sulawesi. Berbatasan dengan Sulawesi Utara, Sulawesi Tengah, dan Laut Maluku. Dikenal sebagai <strong>"Kota Serambi Madinah"</strong> karena pengaruh Islam yang kuat dalam budaya.</p>
+                     </div>
+                   </div>`,
+        
+        adat: `<h4 class="text-xl font-semibold text-amber-800">🎎 Budaya & Adat Istiadat</h4>
+               <div class="flex flex-col md:flex-row gap-6 items-center my-4">
+                 <div class="flex-1 order-2 md:order-1">
+                   <p class="text-stone-700 leading-relaxed">Kebudayaan Gorontalo memadukan tradisi lisan, upacara adat, dan nilai religius yang tertata harmonis dalam kehidupan masyarakatnya. Kekayaan ini tercermin dari tradisi lisan <strong>Dikili</strong> (lantunan syair zikir keagamaan) dan <strong>Tuja'i</strong> (puisi adat berisi petuah), serta upacara pernikahan <strong>Mopotilolo</strong> sebagai prosesi sakral penjemputan calon pengantin. Seluruh tatanan sosial dan prosesi adat tersebut bergerak di atas satu landasan filosofis yang kokoh, yaitu <strong>"Adat Bersendikan Syara', Syara' Bersendikan Kitabullah"</strong>, yang menegaskan bahwa hukum adat masyarakat Gorontalo wajib bersandar sepenuhnya pada syariat Islam dan Al-Qur'an.</p>
+                 </div>
+                 <div class="flex-1 order-1 md:order-2">
+                   <img src="https://museum.gorontaloprov.go.id/uploads/IMG20250911004216.jpg" alt="Tradisi Lisan Tuja'i Gorontalo" class="content-img w-full" onerror="this.style.display='none';">
+                   <p class="text-xs text-stone-400 mt-1 text-center">Sumber: Museum Provinsi Gorontalo</p>
+                 </div>
+               </div>`,
+        
+        pakaian: `<h4 class="text-xl font-semibold text-amber-800">👘 Pakaian Khas</h4>
+                  <div class="flex flex-col md:flex-row gap-6 items-center my-4">
+                    <div class="flex-1">
+                      <img src="https://mapelweb.com/wp-content/uploads/2020/07/Pakaian-Adat-Pernikahan-Gorontalo.jpg" alt="Pakaian Adat Gorontalo" class="content-img w-full" onerror="this.style.display='none';">
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-stone-700 leading-relaxed">Pakaian adat Gorontalo kaya akan nilai filosofis dan umumnya didominasi oleh warna-warna cerah seperti merah, kuning, ungu, dan hijau. Untuk mempelai wanita, pakaian adat yang digunakan bernama <strong>Bili'u</strong>, yang terdiri dari blus kurung, kain sarung, serta hiasan kepala megah yang melambangkan sifat setia, patuh, dan tanggung jawab seorang istri. Sementara untuk pria menggunakan <strong>Makuta</strong>, yakni pakaian berupa baju kurung celana panjang yang dilengkapi dengan <strong>Pasili</strong> (selendang) dan penutup kepala khas, mencerminkan kewibawaan serta jiwa kepemimpinan seorang suami dalam membimbing keluarga.</p>
+                    </div>
+                  </div>`,
+        
+        makanan: `<h4 class="text-xl font-semibold text-amber-800">🍲 Makanan Khas</h4>
+                  <div class="flex flex-col md:flex-row gap-6 items-center my-4">
+                    <div class="flex-1">
+                      <img src="https://sahabatnesia.com/wp-content/uploads/2020/06/makanan-khas-gorontalo-Binte-Biluhuta.jpg" alt="Binte Biluhuta" class="content-img w-full" onerror="this.style.display='none';">
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-stone-700 leading-relaxed">Kuliner tradisional Gorontalo identik dengan perpaduan rasa segar, gurih, dan pedas yang kuat, dengan pemanfaatan hasil laut, jagung, serta kelapa yang dominan. Salah satu hidangan paling ikonik adalah <strong>Binihte Biluhuta</strong> (milu siram), yaitu sup jagung manis yang dicampur dengan parutan kelapa, suwiran ikan cakalang, serta diperas dengan jeruk nipis dan cabai. Selain hidangan utama seperti <strong>Ayam Iloni</strong> yang kaya rempah, Gorontalo juga memiliki camilan tradisional yang khas, seperti <strong>Popolulu</strong>, kue bola-bola ubi jalar goreng berbahan dasar ubi merah dan gula merah, serta <strong>Omu</strong>, takjil menyegarkan berupa es kelapa muda yang dipadukan dengan kuah gula merah dan aroma khas dari daun pandan.</p>
+                    </div>
+                  </div>`,
+        
+        flora: `<h4 class="text-xl font-semibold text-amber-800">🌳 Flora & Fauna Khas</h4>
+                <div class="flex flex-col md:flex-row gap-6 items-center my-4">
+                  <div class="flex-1">
+                    <img src="https://asset.kompas.com/crops/Ey4DmQhYtAh7ehgYEBWOSw5Hje8=/30x0:922x595/1200x800/data/photo/2017/08/25/2551332400.jpg" alt="Burung Maleo" class="content-img w-full" onerror="this.style.display='none';">
+                    <p class="text-xs text-stone-400 mt-1 text-center">Burung Maleo (Macrocephalon maleo)</p>
+                  </div>
+                  <div class="flex-1">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg81U9lC3oLR6oiJe28vVW16QXz_RH5UFdbS78ektYtyz2W9wLtSOzYba9PBiJ-qXSrjru4g90qJT2p721UxSI-V8CxRa1kcFNpCxoRbX0TP99NXKsCoHQZPV9uX0LMqVaJs0D46MG_eL8/s640/Vitex_coffassus_flwr.jpg" alt="Pohon Gofasa" class="content-img w-full" onerror="this.style.display='none';">
+                    <p class="text-xs text-stone-400 mt-1 text-center">Pohon Gofasa (Vitex cofassus)</p>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-stone-700 leading-relaxed">Gorontalo memiliki kekayaan keanekaragaman hayati yang tinggi karena kawasannya mencakup ekosistem Wallacea yang unik. Di sektor flora, pohon <strong>Gofasa (Vitex cofassus)</strong> dan kayu hitam Sulawesi (eboni) menjadi tanaman khas yang bernilai tinggi karena serat kayunya yang kuat untuk bahan bangunan dan kerajinan. Sementara di dunia fauna, Gorontalo merupakan habitat asli bagi hewan endemik yang dilindungi seperti <strong>Tarsius (Tarsius supriatnai)</strong>, primata terkecil di dunia, serta <strong>burung Maleo (Macrocephalon maleo)</strong> yang memanfaatkan panas bumi di kawasan Taman Nasional Bogani Nani Wartabone untuk menetaskan telurnya.</p>
+                </div>`
+      };
+
+      // ---------- TAB DOLUHUPA ----------
+      const tabHeaders = document.querySelectorAll('#tabHeaders .tab-btn');
+      const tabContent = document.getElementById('tabContent');
+      function setTab(tabId) {
+        tabHeaders.forEach(btn => btn.classList.remove('tab-active', 'border-amber-600', 'text-amber-800'));
+        const activeBtn = Array.from(tabHeaders).find(b => b.dataset.tab === tabId);
+        if (activeBtn) { activeBtn.classList.add('tab-active', 'border-amber-600', 'text-amber-800'); }
+        tabContent.innerHTML = tabData[tabId] || '<p>Konten tidak tersedia</p>';
+      }
+      tabHeaders.forEach(btn => {
+        btn.addEventListener('click', () => setTab(btn.dataset.tab));
+      });
+      setTab('makna');
+
+      // ---------- TAB BUDAYA ----------
+      const bTabHeaders = document.querySelectorAll('#budayaTabHeaders .budaya-tab-btn');
+      const budayaContent = document.getElementById('budayaContent');
+      function setBudayaTab(tabId) {
+        bTabHeaders.forEach(btn => btn.classList.remove('border-amber-600', 'text-amber-800'));
+        const active = Array.from(bTabHeaders).find(b => b.dataset.btab === tabId);
+        if (active) { active.classList.add('border-amber-600', 'text-amber-800'); }
+        budayaContent.innerHTML = budayaData[tabId] || '<p>Informasi budaya tersedia.</p>';
+      }
+      bTabHeaders.forEach(btn => {
+        btn.addEventListener('click', () => setBudayaTab(btn.dataset.btab));
+      });
+      setBudayaTab('geografi');
+
+      // ---------- HOTSPOT 3D ----------
+      const infoPopup = document.getElementById('infoPopup');
+      const popupText = document.getElementById('popupText');
+      const hotspotBtns = document.querySelectorAll('.hotspot-btn');
+
+      const infoMap = {
+        atap: '🏛️ Filosofi Atap Segitiga: Atap pelana berundak melambangkan kepercayaan kepada Tuhan dan tingkatan alam semesta. Setiap undakan mengandung nilai spiritual.',
+        tangga: '🪜 Tangga Tolotahu: Tangga di kiri dan kanan rumah, jumlah anak tangga mencerminkan siklus kehidupan manusia. Simbol perjalanan dari lahir hingga dewasa.',
+        pilar: '🏗️ Pilar Wolihi: Pilar utama berjumlah 2 sebagai penopang utama, melambangkan keseimbangan dan kebersamaan. Pilar pembantu menambah kekuatan struktur.'
+      };
+
+      hotspotBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          const focus = this.dataset.focus;
+          const text = infoMap[focus] || 'Filosofi tersembunyi dari Doluhupa.';
+          popupText.textContent = text;
+          infoPopup.classList.remove('hidden');
+          document.getElementById('galeri3d').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+      });
+
+      console.log('✨ Doluhupa digital encyclopedia siap.');
+    })();
+  </script>
+</body>
+</html>
